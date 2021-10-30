@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04C5E6C48BDA32CA3058D1A9 /* Pods_AttentionSeeker__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E519D075E21D985D3D546847 /* Pods_AttentionSeeker__macOS_.framework */; };
+		1921EBC6272CE8DA007902BC /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1921EBC5272CE8DA007902BC /* Tests_iOS.swift */; };
+		1921EBC8272CE8DA007902BC /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1921EBC7272CE8DA007902BC /* Tests_iOSLaunchTests.swift */; };
+		1921EBD2272CE8DA007902BC /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1921EBD1272CE8DA007902BC /* Tests_macOS.swift */; };
+		1921EBD4272CE8DA007902BC /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1921EBD3272CE8DA007902BC /* Tests_macOSLaunchTests.swift */; };
+		1921EBD5272CE8DA007902BC /* AttentionSeekerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1921EBAD272CE8D9007902BC /* AttentionSeekerApp.swift */; };
+		1921EBD6272CE8DA007902BC /* AttentionSeekerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1921EBAD272CE8D9007902BC /* AttentionSeekerApp.swift */; };
+		1921EBD7272CE8DA007902BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1921EBAE272CE8D9007902BC /* ContentView.swift */; };
+		1921EBD8272CE8DA007902BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1921EBAE272CE8D9007902BC /* ContentView.swift */; };
+		1921EBD9272CE8DA007902BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1921EBAF272CE8DA007902BC /* Assets.xcassets */; };
+		1921EBDA272CE8DA007902BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1921EBAF272CE8DA007902BC /* Assets.xcassets */; };
+		1921EBEA272CEECC007902BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1921EBE9272CEECC007902BC /* GoogleService-Info.plist */; };
+		1921EBEC272CF2E3007902BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1921EBEB272CF2E3007902BC /* AppDelegate.swift */; };
+		1921EBED272CF2E3007902BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1921EBEB272CF2E3007902BC /* AppDelegate.swift */; };
+		72825E801F5CF1D8AB68664D /* Pods_AttentionSeeker__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B272953F20FB9DE6378B2A1C /* Pods_AttentionSeeker__iOS_.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1921EBC2272CE8DA007902BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1921EBA8272CE8D9007902BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1921EBB3272CE8DA007902BC;
+			remoteInfo = "AttentionSeeker (iOS)";
+		};
+		1921EBCE272CE8DA007902BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1921EBA8272CE8D9007902BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1921EBB9272CE8DA007902BC;
+			remoteInfo = "AttentionSeeker (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1921EBAD272CE8D9007902BC /* AttentionSeekerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttentionSeekerApp.swift; sourceTree = "<group>"; };
+		1921EBAE272CE8D9007902BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1921EBAF272CE8DA007902BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1921EBB4272CE8DA007902BC /* AttentionSeeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttentionSeeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1921EBBA272CE8DA007902BC /* AttentionSeeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttentionSeeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1921EBBC272CE8DA007902BC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		1921EBC1272CE8DA007902BC /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1921EBC5272CE8DA007902BC /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		1921EBC7272CE8DA007902BC /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		1921EBCD272CE8DA007902BC /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1921EBD1272CE8DA007902BC /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		1921EBD3272CE8DA007902BC /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		1921EBE9272CEECC007902BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1921EBEB272CF2E3007902BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CCEE834BEE17AB76E232C75 /* Pods-AttentionSeeker (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttentionSeeker (macOS).debug.xcconfig"; path = "Target Support Files/Pods-AttentionSeeker (macOS)/Pods-AttentionSeeker (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		7313885E0E0CD8783799A134 /* Pods-AttentionSeeker (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttentionSeeker (iOS).debug.xcconfig"; path = "Target Support Files/Pods-AttentionSeeker (iOS)/Pods-AttentionSeeker (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		B272953F20FB9DE6378B2A1C /* Pods_AttentionSeeker__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AttentionSeeker__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75448CEE292FCD7ECCE4B32 /* Pods-AttentionSeeker (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttentionSeeker (iOS).release.xcconfig"; path = "Target Support Files/Pods-AttentionSeeker (iOS)/Pods-AttentionSeeker (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		C6DA4BA67951F34D0A7C2147 /* Pods-AttentionSeeker (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttentionSeeker (macOS).release.xcconfig"; path = "Target Support Files/Pods-AttentionSeeker (macOS)/Pods-AttentionSeeker (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		E519D075E21D985D3D546847 /* Pods_AttentionSeeker__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AttentionSeeker__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1921EBB1272CE8DA007902BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72825E801F5CF1D8AB68664D /* Pods_AttentionSeeker__iOS_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1921EBB7272CE8DA007902BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C5E6C48BDA32CA3058D1A9 /* Pods_AttentionSeeker__macOS_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1921EBBE272CE8DA007902BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1921EBCA272CE8DA007902BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1921EBA7272CE8D9007902BC = {
+			isa = PBXGroup;
+			children = (
+				1921EBE9272CEECC007902BC /* GoogleService-Info.plist */,
+				1921EBAC272CE8D9007902BC /* Shared */,
+				1921EBBB272CE8DA007902BC /* macOS */,
+				1921EBC4272CE8DA007902BC /* Tests iOS */,
+				1921EBD0272CE8DA007902BC /* Tests macOS */,
+				1921EBB5272CE8DA007902BC /* Products */,
+				45A58AC9E3289A394E1DE4D1 /* Pods */,
+				94BCB2446A5CC1DAD45ED5C9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1921EBAC272CE8D9007902BC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1921EBAD272CE8D9007902BC /* AttentionSeekerApp.swift */,
+				1921EBAE272CE8D9007902BC /* ContentView.swift */,
+				1921EBEB272CF2E3007902BC /* AppDelegate.swift */,
+				1921EBAF272CE8DA007902BC /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		1921EBB5272CE8DA007902BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1921EBB4272CE8DA007902BC /* AttentionSeeker.app */,
+				1921EBBA272CE8DA007902BC /* AttentionSeeker.app */,
+				1921EBC1272CE8DA007902BC /* Tests iOS.xctest */,
+				1921EBCD272CE8DA007902BC /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1921EBBB272CE8DA007902BC /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				1921EBBC272CE8DA007902BC /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		1921EBC4272CE8DA007902BC /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1921EBC5272CE8DA007902BC /* Tests_iOS.swift */,
+				1921EBC7272CE8DA007902BC /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		1921EBD0272CE8DA007902BC /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				1921EBD1272CE8DA007902BC /* Tests_macOS.swift */,
+				1921EBD3272CE8DA007902BC /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		45A58AC9E3289A394E1DE4D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7313885E0E0CD8783799A134 /* Pods-AttentionSeeker (iOS).debug.xcconfig */,
+				B75448CEE292FCD7ECCE4B32 /* Pods-AttentionSeeker (iOS).release.xcconfig */,
+				1CCEE834BEE17AB76E232C75 /* Pods-AttentionSeeker (macOS).debug.xcconfig */,
+				C6DA4BA67951F34D0A7C2147 /* Pods-AttentionSeeker (macOS).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		94BCB2446A5CC1DAD45ED5C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B272953F20FB9DE6378B2A1C /* Pods_AttentionSeeker__iOS_.framework */,
+				E519D075E21D985D3D546847 /* Pods_AttentionSeeker__macOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1921EBB3272CE8DA007902BC /* AttentionSeeker (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1921EBDD272CE8DA007902BC /* Build configuration list for PBXNativeTarget "AttentionSeeker (iOS)" */;
+			buildPhases = (
+				29FF4EF3C86113E94D52DA47 /* [CP] Check Pods Manifest.lock */,
+				1921EBB0272CE8DA007902BC /* Sources */,
+				1921EBB1272CE8DA007902BC /* Frameworks */,
+				1921EBB2272CE8DA007902BC /* Resources */,
+				7120D66E2824F4F6846833E7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AttentionSeeker (iOS)";
+			productName = "AttentionSeeker (iOS)";
+			productReference = 1921EBB4272CE8DA007902BC /* AttentionSeeker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1921EBB9272CE8DA007902BC /* AttentionSeeker (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1921EBE0272CE8DA007902BC /* Build configuration list for PBXNativeTarget "AttentionSeeker (macOS)" */;
+			buildPhases = (
+				BF72205D08F16F91942763BE /* [CP] Check Pods Manifest.lock */,
+				1921EBB6272CE8DA007902BC /* Sources */,
+				1921EBB7272CE8DA007902BC /* Frameworks */,
+				1921EBB8272CE8DA007902BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AttentionSeeker (macOS)";
+			productName = "AttentionSeeker (macOS)";
+			productReference = 1921EBBA272CE8DA007902BC /* AttentionSeeker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1921EBC0272CE8DA007902BC /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1921EBE3272CE8DA007902BC /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				1921EBBD272CE8DA007902BC /* Sources */,
+				1921EBBE272CE8DA007902BC /* Frameworks */,
+				1921EBBF272CE8DA007902BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1921EBC3272CE8DA007902BC /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 1921EBC1272CE8DA007902BC /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1921EBCC272CE8DA007902BC /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1921EBE6272CE8DA007902BC /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				1921EBC9272CE8DA007902BC /* Sources */,
+				1921EBCA272CE8DA007902BC /* Frameworks */,
+				1921EBCB272CE8DA007902BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1921EBCF272CE8DA007902BC /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 1921EBCD272CE8DA007902BC /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1921EBA8272CE8D9007902BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					1921EBB3272CE8DA007902BC = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					1921EBB9272CE8DA007902BC = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					1921EBC0272CE8DA007902BC = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 1921EBB3272CE8DA007902BC;
+					};
+					1921EBCC272CE8DA007902BC = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 1921EBB9272CE8DA007902BC;
+					};
+				};
+			};
+			buildConfigurationList = 1921EBAB272CE8D9007902BC /* Build configuration list for PBXProject "AttentionSeeker" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1921EBA7272CE8D9007902BC;
+			productRefGroup = 1921EBB5272CE8DA007902BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1921EBB3272CE8DA007902BC /* AttentionSeeker (iOS) */,
+				1921EBB9272CE8DA007902BC /* AttentionSeeker (macOS) */,
+				1921EBC0272CE8DA007902BC /* Tests iOS */,
+				1921EBCC272CE8DA007902BC /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1921EBB2272CE8DA007902BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1921EBD9272CE8DA007902BC /* Assets.xcassets in Resources */,
+				1921EBEA272CEECC007902BC /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1921EBB8272CE8DA007902BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1921EBDA272CE8DA007902BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1921EBBF272CE8DA007902BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1921EBCB272CE8DA007902BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29FF4EF3C86113E94D52DA47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AttentionSeeker (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7120D66E2824F4F6846833E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AttentionSeeker (iOS)/Pods-AttentionSeeker (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AttentionSeeker (iOS)/Pods-AttentionSeeker (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AttentionSeeker (iOS)/Pods-AttentionSeeker (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF72205D08F16F91942763BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AttentionSeeker (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1921EBB0272CE8DA007902BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1921EBEC272CF2E3007902BC /* AppDelegate.swift in Sources */,
+				1921EBD7272CE8DA007902BC /* ContentView.swift in Sources */,
+				1921EBD5272CE8DA007902BC /* AttentionSeekerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1921EBB6272CE8DA007902BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1921EBED272CF2E3007902BC /* AppDelegate.swift in Sources */,
+				1921EBD8272CE8DA007902BC /* ContentView.swift in Sources */,
+				1921EBD6272CE8DA007902BC /* AttentionSeekerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1921EBBD272CE8DA007902BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1921EBC8272CE8DA007902BC /* Tests_iOSLaunchTests.swift in Sources */,
+				1921EBC6272CE8DA007902BC /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1921EBC9272CE8DA007902BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1921EBD4272CE8DA007902BC /* Tests_macOSLaunchTests.swift in Sources */,
+				1921EBD2272CE8DA007902BC /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1921EBC3272CE8DA007902BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1921EBB3272CE8DA007902BC /* AttentionSeeker (iOS) */;
+			targetProxy = 1921EBC2272CE8DA007902BC /* PBXContainerItemProxy */;
+		};
+		1921EBCF272CE8DA007902BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1921EBB9272CE8DA007902BC /* AttentionSeeker (macOS) */;
+			targetProxy = 1921EBCE272CE8DA007902BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1921EBDB272CE8DA007902BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1921EBDC272CE8DA007902BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1921EBDE272CE8DA007902BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7313885E0E0CD8783799A134 /* Pods-AttentionSeeker (iOS).debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6V7HFA2W5C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quack.AttentionSeeker;
+				PRODUCT_NAME = AttentionSeeker;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1921EBDF272CE8DA007902BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B75448CEE292FCD7ECCE4B32 /* Pods-AttentionSeeker (iOS).release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6V7HFA2W5C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quack.AttentionSeeker;
+				PRODUCT_NAME = AttentionSeeker;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1921EBE1272CE8DA007902BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CCEE834BEE17AB76E232C75 /* Pods-AttentionSeeker (macOS).debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quack.AttentionSeeker;
+				PRODUCT_NAME = AttentionSeeker;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1921EBE2272CE8DA007902BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6DA4BA67951F34D0A7C2147 /* Pods-AttentionSeeker (macOS).release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quack.AttentionSeeker;
+				PRODUCT_NAME = AttentionSeeker;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1921EBE4272CE8DA007902BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "quack.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AttentionSeeker (iOS)";
+			};
+			name = Debug;
+		};
+		1921EBE5272CE8DA007902BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "quack.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AttentionSeeker (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1921EBE7272CE8DA007902BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "quack.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "AttentionSeeker (macOS)";
+			};
+			name = Debug;
+		};
+		1921EBE8272CE8DA007902BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "quack.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "AttentionSeeker (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1921EBAB272CE8D9007902BC /* Build configuration list for PBXProject "AttentionSeeker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1921EBDB272CE8DA007902BC /* Debug */,
+				1921EBDC272CE8DA007902BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1921EBDD272CE8DA007902BC /* Build configuration list for PBXNativeTarget "AttentionSeeker (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1921EBDE272CE8DA007902BC /* Debug */,
+				1921EBDF272CE8DA007902BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1921EBE0272CE8DA007902BC /* Build configuration list for PBXNativeTarget "AttentionSeeker (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1921EBE1272CE8DA007902BC /* Debug */,
+				1921EBE2272CE8DA007902BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1921EBE3272CE8DA007902BC /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1921EBE4272CE8DA007902BC /* Debug */,
+				1921EBE5272CE8DA007902BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1921EBE6272CE8DA007902BC /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1921EBE7272CE8DA007902BC /* Debug */,
+				1921EBE8272CE8DA007902BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1921EBA8272CE8D9007902BC /* Project object */;
+}
